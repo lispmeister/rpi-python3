@@ -12,7 +12,7 @@ push:
 	docker push $(DOCKER_IMAGE_NAME)
 
 test:
-	docker run --rm $(DOCKER_IMAGE_TAGNAME) python2 -c "Success."
+	docker run --rm $(DOCKER_IMAGE_TAGNAME) python3 -c 'print("Success.")'
 
 version:
 	docker run --rm $(DOCKER_IMAGE_TAGNAME) python3 --version
