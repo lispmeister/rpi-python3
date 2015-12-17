@@ -17,5 +17,3 @@ WORKDIR /data
 # Define default command
 CMD ["bash"]
 
-# Default entrypoint
-ENTRYPOINT ["/usr/bin/python3"]
