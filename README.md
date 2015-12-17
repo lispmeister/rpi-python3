@@ -1,6 +1,39 @@
+# rpi-python
+
+Raspberry Pi compatible Docker base image with Python3 preinstalled.
+
+Run all the commands from within the project root directory.
+
+### Build Details
+- [Source Project Page](https://github.com/lispmeister)
+- [Source Repository](https://github.com/lispmeister/rpi-python3)
+- [Dockerfile](https://github.com/lispmeister/rpi-python3/blob/master/Dockerfile)
+- [DockerHub] (https://registry.hub.docker.com/u/lispmeister/rpi-python3/)
+
+
+#### Build the Docker Image
+```bash
+make build
+```
+
+#### Run the Docker Image and get the version of the installed Python
+```bash
+make version
+```
+
+#### Push the Docker Image to the Docker Hub
+* First use a `docker login` with username, password and email address
+* Second push the Docker Image to the official Docker Hub
+
+```bash
+make push
+```
+
+## License
+
 The MIT License (MIT)
 
-Copyright (c) 2015 Hypriot
+Copyright (c) 2015 Markus Fix
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
