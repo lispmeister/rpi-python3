@@ -1,4 +1,4 @@
-# rpi-python
+# rpi-python3
 
 Raspberry Pi compatible Docker base image with Python3 preinstalled.
 
