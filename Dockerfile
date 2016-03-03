@@ -22,8 +22,8 @@ RUN apt-get update && apt-get install -y \
 
 # Build Python 3.5.1
 WORKDIR /data
-wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
-tar -zxvf Python-3.5.1.tgz
+RUN wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
+RUN tar -zxvf Python-3.5.1.tgz
 WORKDIR Python-3.5.1
 RUN ./configure
 RUN make -j4
