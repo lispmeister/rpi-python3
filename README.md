@@ -33,6 +33,11 @@ make version
 make push
 ```
 
+#### Start the Container
+```bash
+docker run -it --rm lispmeister/rpi-python3
+```
+
 ## License
 
 The MIT License (MIT)
