@@ -29,13 +29,15 @@ RUN ./configure
 RUN make -j4
 RUN make install
 RUN python3.5 --version
+ENV PATH=/usr/local/bin:$PATH
 
 # Install Pip
 WORKDIR /data
-RUN wget https://bootstrap.pypa.io/get-pip.py
-RUN python3.5 get-pip.py
+RUN python3.5 -m ensurepip --upgrade
 RUN pip3.5 --version
 
+# Cleanup
+RUN rm -rf /data/*
 # Define default command
 CMD ["bash"]
 
