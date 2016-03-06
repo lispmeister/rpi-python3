@@ -10,6 +10,10 @@ Run all the commands from within the project root directory.
 - [Dockerfile](https://github.com/lispmeister/rpi-python3/blob/master/Dockerfile)
 - [DockerHub] (https://registry.hub.docker.com/u/lispmeister/rpi-python3/)
 
+#### Get Build Help
+```bash
+make help
+```
 
 #### Build the Docker Image
 ```bash
